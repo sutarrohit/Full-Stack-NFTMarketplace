@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
-import Web3Modal from "web3Modal";
+import Web3Modal from "web3modal";
 import { Contract, ContractFactory, ethers } from "ethers";
 import Router from "next/router";
 import { useRouter } from "next/router";
@@ -38,14 +38,14 @@ const fetchContract = (signerorProvider) =>
 //----CONNECTING WITH SMART CONTRACT
 const connectingWithSmartContract = async () => {
   try {
-    const getWeb3Modal = new Web3Modal();
-    const connection = await getWeb3Modal.connect();
+    const web3Modal = new Web3Modal();
+    const connection = await web3Modal.connect();
     const provider = new ethers.providers.Web3Provider(connection);
     const signer = provider.getSigner();
     const contract = fetchContract(signer);
     return contract;
   } catch (error) {
-    console.log(`Error is ${error}`);
+    console.log("Something went wrong while connecting with contract");
   }
 };
 
