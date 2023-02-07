@@ -16,6 +16,7 @@ const projectId = PROJECTID;
 const projectSecreteKey = PROJECTSECRETEKEY;
 const auth = "Basic " + Buffer.from(projectId + ":" + projectSecreteKey).toString("base64");
 const subdomain = SUBDOMAIN;
+const temp = 10;
 
 const client = ipfsHttpClient({
   host: "ipfs.infura.io",
