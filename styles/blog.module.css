@@ -1,0 +1,14 @@
+.blog {
+  width: 100%;
+}
+
+.blog_box {
+  width: 50%;
+  margin: 8rem auto;
+  font-size: 2rem;
+  align-content: center;
+}
+
+.blog_box h1 {
+  text-align: center;
+}

@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* //THEME 1 IMP*/
+:root {
+  --icons-color: #4c5773;
+  --icons-light-color: #4c577341;
+  --icons-bg-color: #e2e6e9;
+  --shadow-dark-color: #d3dae7;
+  --bg-shadow-dark-color: #d3dae745;
+  --shadow-light-color: #fff;
+  --main-bg-color: #ecf0f3;
+
+  /* --box-shadow: 1rem 1rem 1rem var(--shadow-dark-color), -1rem -1rem 1rem var(--shadow-light-color);
+  --box-shadow-2: 0rem 0rem 0rem var(--shadow-dark-color), -0.3rem -0.3rem 1rem var(--shadow-dark-color); */
+
+  --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --box-shadow-2: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* //THEME 2 IMP*/
+/* .dark-theme {
+  --icons-color: #ffdf2b;
+  --icons-light-color: #ffdf2b57;
+  --icons-bg-color: #ffdf2b;
+  --shadow-dark-color: #555557;
+  --bg-shadow-dark-color: #555557;
+  --shadow-light-color: #232325;
+  --main-bg-color: #232325;
+  --overlay: #2323255e;
+
+  --box-shadow: 1px 1px 2px #ffdf2b, -1px -1px 2px #ffdf2b;
+  --box-shadow-2: 1px 1px 2px #ffdf2b, -1px -1px 2px #ffdf2b;
+} */
+
+.dark-theme {
+  --icons-color: #fff;
+  --icons-light-color: #ffdf2b57;
+  --icons-bg-color: #fff;
+  --shadow-dark-color: #555557;
+  --bg-shadow-dark-color: #555557;
+  --shadow-light-color: #232325;
+  --main-bg-color: #232325;
+  --overlay: #2323255e;
+
+  --box-shadow: 1px 1px 2px #fff, -1px -1px 2px #fff;
+  --box-shadow-2: 1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+
+/* //THEME 8 IMP */
+/* .light-theme {
+  --icons-color: #ff5b3e;
+  --icons-light-color: #ff5b3e57;
+  --icons-bg-color: #ff5b3e;
+  --shadow-dark-color: #373535;
+  --bg-shadow-dark-color: #373535;
+  --shadow-light-color: #282828;
+  --main-bg-color: #282828;
+  --box-shadow: 1px 1px 2px #ff5b3e, -1px -1px 2px #ff5b3e;
+  --box-shadow-2: 1px 1px 2px #ff5b3e, -1px -1px 2px #ff5b3e;
+} */
+
+/* //THEME 9 IMP*/
+/* .pink {
+  --icons-color: #5ddee2;
+  --icons-light-color: #5ddee257;
+  --icons-bg-color: #5ddee2;
+  --shadow-dark-color: #373939;
+  --bg-shadow-dark-color: #373939;
+  --shadow-light-color: #1b181e;
+  --main-bg-color: #1b181e;
+  --box-shadow: 1px 1px 2px #5ddee2, -1px -1px 2px #5ddee2;
+  --box-shadow-2: 1px 1px 2px #5ddee2, -1px -1px 2px #5ddee2;
+} */
+
+/* //THEME 11 */
+/* :root{
+  --icons-color: #F83166;
+  --icons-light-color: #F8316657;
+  --icons-bg-color: #F83166;
+  --shadow-dark-color: #2e2c2d;
+  --bg-shadow-dark-color: #2e2c2d;
+  --shadow-light-color: #1E1E1E;
+  --main-bg-color: #1E1E1E;
+  --box-shadow: 1px 1px 2px #8f2c2c,
+  -1px -1px 2px #c13c3c;
+  --box-shadow-2:1px 1px 2px #8f2c2c,
+  -1px -1px 2px #c13c3c;
+} */
+
+/* //THEME 12  IMP*/
+/* :root {
+  --icons-color: #fff;
+  --icons-light-color: #fff57;
+  --icons-bg-color: #fff;
+  --shadow-dark-color: #2e2c2d;
+  --bg-shadow-dark-color: #2e2c2d;
+  --shadow-light-color: #0e131f;
+  --main-bg-color: #0e131f;
+  --box-shadow: 1px 1px 2px #8f2c2c, -1px -1px 2px #c13c3c;
+  --box-shadow-2: 1px 1px 2px #8f2c2c, -1px -1px 2px #c13c3c;
+} */
+
+/* //THEME 13 IMP*/
+/* :root {
+  --icons-color: pink;
+  --icons-light-color: #94536157;
+  --icons-bg-color: #945361;
+  --shadow-dark-color: #484546;
+  --bg-shadow-dark-color: #484546;
+  --shadow-light-color: #30154e;
+  --main-bg-color: #30154e;
+  --box-shadow: 1px 1px 2px #945361, -1px -1px 2px #945361;
+  --box-shadow-2: 1px 1px 2px #945361, -1px -1px 2px #945361;
+} */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  background-color: var(--main-bg-color);
+  color: var(--icons-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: none;
+}
+
+::selection {
+  color: var(--shadow-dark-color);
+  background: var(--icons-color);
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  border: 1px solid var(--main-bg-color);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: var(--main-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
+  background: var(--icons-color);
+  width: 0.5rem;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}

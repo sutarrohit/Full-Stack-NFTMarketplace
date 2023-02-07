@@ -1,0 +1,28 @@
+{
+  "name": "nftmarketplace",
+  "version": "1.0.0",
+  "description": "NFT Marketplace",
+  "main": "index.js",
+  "author": "Rohit Sutar",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@nomiclabs/hardhat-etherscan": "^3.1.4",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.5",
+    "hardhat-contract-sizer": "^2.6.1",
+    "hardhat-deploy": "^0.11.22",
+    "hardhat-gas-reporter": "^1.0.9",
+    "prettier": "^2.8.1",
+    "prettier-plugin-solidity": "^1.1.1",
+    "solhint": "^3.3.7",
+    "solidity-coverage": "^0.8.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0"
+  }
+}
