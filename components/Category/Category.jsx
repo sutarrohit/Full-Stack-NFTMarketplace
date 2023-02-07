@@ -61,7 +61,6 @@ const Category = () => {
               alt="Background Image"
               width={400}
               height={150}
-              objectFit="cover"
             />
 
             <div className={Style.category_box_title}>

@@ -95,7 +95,7 @@ const aboutus = () => {
         <div className={Style.aboutus_box_facts}>
           <div className={Style.aboutus_box_facts_box}>
             {factsArray.map((el, i) => (
-              <div className={Style.aboutus_box_facts_box_info}>
+              <div className={Style.aboutus_box_facts_box_info} key={i + 1}>
                 <h3>{el.title}</h3>
                 <p>{el.info}</p>
               </div>

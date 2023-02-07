@@ -34,7 +34,6 @@ const FollowerTabCard = ({ i, el }) => {
             alt="profile braground"
             width={500}
             height={250}
-            objectFit="cover"
           />
         </div>
 

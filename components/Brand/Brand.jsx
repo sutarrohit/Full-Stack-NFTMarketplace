@@ -22,7 +22,7 @@ const Brand = () => {
     <div className={Style.Brand}>
       <div className={Style.Brand_box}>
         <div className={Style.Brand_box_left}>
-          <Image src={images.logo} alt="brand logo" width={100} height={100} />
+          <Image src={images.logo} alt="brand logo" height={50} />
           <h1>Earn free crypto with Ciscrypt</h1>
           <p>A creative agency that lead and inspire.</p>
 
@@ -42,7 +42,7 @@ const Brand = () => {
           </div>
         </div>
         <div className={Style.Brand_box_right}>
-          <Image src={images.earn} className={Style.Brand_box_right_img} alt="brand logo" width={800} height={600} />
+          <Image src={images.earn} className={Style.Brand_box_right_img} alt="brand logo" />
         </div>
       </div>
     </div>

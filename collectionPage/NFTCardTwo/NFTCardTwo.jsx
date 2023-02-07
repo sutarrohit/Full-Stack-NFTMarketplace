@@ -25,16 +25,10 @@ const NFTCardTwo = ({ NFTData }) => {
   };
 
   useEffect(() => {
-    console.log("set1");
-    console.log(checkNFT);
     if (NFTData.length == 0) {
-      console.log("set2");
       setCheckNFT(true);
-      console.log(checkNFT);
     }
   }, []);
-
-  console.log(NFTData);
 
   return (
     <>
@@ -63,14 +57,7 @@ const NFTCardTwo = ({ NFTData }) => {
 
                 {/* Image box */}
                 <div className={Style.NFTCardTwo_box_img}>
-                  <Image
-                    src={el.image}
-                    alt="NFT"
-                    width={500}
-                    height={220}
-                    objectFit="cover"
-                    className={Style.NFTCardTwo_box_img_img}
-                  />
+                  <Image src={el.image} alt="NFT" width={100} height={220} className={Style.NFTCardTwo_box_img_img} />
                 </div>
 
                 {/* Info box  */}

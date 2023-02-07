@@ -151,7 +151,6 @@ export const NFTMarketplaceProvider = ({ children }) => {
           });
 
       await transaction.wait();
-      console.log(transaction);
       router.push("/searchPage");
     } catch (error) {
       console.log(`Create sale error ${error}`);
@@ -228,7 +227,6 @@ export const NFTMarketplaceProvider = ({ children }) => {
           };
         })
       );
-      console.log("item is", items);
       return items;
     } catch (error) {
       console.log(`Error while fetchMyNFTorListedNFT ${error}`);

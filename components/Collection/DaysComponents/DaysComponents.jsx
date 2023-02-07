@@ -17,7 +17,6 @@ const DaysComponents = ({ element, Ikey }) => {
             alt="profile backgound"
             width={500}
             height={300}
-            objectFit="covers"
           />
         </div>
 
@@ -57,7 +56,6 @@ const DaysComponents = ({ element, Ikey }) => {
                 alt="profile image"
                 width={30}
                 height={30}
-                objectFit="covers"
               />
               <p>
                 Creator

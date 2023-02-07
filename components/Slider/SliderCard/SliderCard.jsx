@@ -18,7 +18,6 @@ const SliderCard = ({ element, Ikey }) => {
             alt="slider profile"
             width={500}
             height={225}
-            objectFit="cover"
           />
         </motion.div>
         <div className={Style.sliderCard_box_title}>
