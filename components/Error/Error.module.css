@@ -33,4 +33,14 @@
     height: 90%;
     padding: 2rem;
   }
+
+  .Error {
+    background-color: var(--overlay);
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    z-index: 1111111;
+    top: 0;
+    cursor: pointer;
+  }
 }

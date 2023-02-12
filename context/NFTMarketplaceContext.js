@@ -32,7 +32,7 @@ import { NftMarketplaceAddress, NftMarketplaceABI } from "./constant";
 
 // ----FETCHING OR GETTING SMART CONTRACT USING ETHERS.JS
 const fetchContract = (signerorProvider) =>
-  new ethers.Contract("0xC27CC471BC0Cf9e1840A609aB66b97B4DE47B6C4", NftMarketplaceABI, signerorProvider);
+  new ethers.Contract(NftMarketplaceAddress, NftMarketplaceABI, signerorProvider);
 
 //----CONNECTING WITH SMART CONTRACT
 const connectingWithSmartContract = async () => {
