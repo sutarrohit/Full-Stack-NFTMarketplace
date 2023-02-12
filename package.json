@@ -11,17 +11,26 @@
   "dependencies": {
     "@next/font": "13.1.1",
     "@openzeppelin/contracts": "^4.8.1",
+    "@pinata/sdk": "^2.1.0",
     "axios": "^1.2.6",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "ethers": "^5.7.2",
+    "form-data": "^4.0.0",
     "framer-motion": "^8.5.2",
     "ipfs-http-client": "^60.0.0",
     "next": "13.1.1",
+    "path": "^0.12.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-dropzone": "^14.2.3",
     "react-icons": "^4.7.1",
     "web3modal": "^1.9.12",
     "yarn": "^1.22.19"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   }
 }

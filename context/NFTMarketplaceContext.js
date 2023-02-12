@@ -4,7 +4,7 @@ import { Contract, ContractFactory, ethers } from "ethers";
 import Router from "next/router";
 import { useRouter } from "next/router";
 import axios from "axios";
-import { create as ipfsHttpClient } from "ipfs-http-client";
+import { create } from "ipfs-http-client";
 
 const GOERLI_RPC_URL = process.env.NEXT_PUBLIC_GOERLI_RPC_URL;
 const PROJECTID = process.env.NEXT_PUBLIC_PROJECTID;
@@ -13,14 +13,13 @@ const SUBDOMAIN = process.env.NEXT_PUBLIC_SUBDOMAIN;
 
 //To Upload Image to IPFS
 const projectId = PROJECTID;
-const projectSecreteKey = PROJECTSECRETEKEY;
-const auth = "Basic " + Buffer.from(projectId + ":" + projectSecreteKey).toString("base64");
+const projectSecretKey = PROJECTSECRETEKEY;
+const auth = "Basic " + Buffer.from(projectId + ":" + projectSecretKey).toString("base64");
 const subdomain = SUBDOMAIN;
-const temp = 10;
 
-const client = ipfsHttpClient({
+const client = create({
   host: "ipfs.infura.io",
-  //host: "infura-ipfs.io/ipfs",
+  //host: "ipfs.io",
   port: 5001,
   protocol: "https",
   headers: {
@@ -33,7 +32,7 @@ import { NftMarketplaceAddress, NftMarketplaceABI } from "./constant";
 
 // ----FETCHING OR GETTING SMART CONTRACT USING ETHERS.JS
 const fetchContract = (signerorProvider) =>
-  new ethers.Contract(NftMarketplaceAddress, NftMarketplaceABI, signerorProvider);
+  new ethers.Contract("0xC27CC471BC0Cf9e1840A609aB66b97B4DE47B6C4", NftMarketplaceABI, signerorProvider);
 
 //----CONNECTING WITH SMART CONTRACT
 const connectingWithSmartContract = async () => {
@@ -105,6 +104,8 @@ export const NFTMarketplaceProvider = ({ children }) => {
     try {
       const added = await client.add({ content: file });
       const url = `${subdomain}/ipfs/${added.path}`;
+      // const url = `https://ipfs.io/ipfs/${added.path}`;
+
       console.log(`IPFS Image URL ${url}`);
       return url;
     } catch (error) {
@@ -124,7 +125,9 @@ export const NFTMarketplaceProvider = ({ children }) => {
     // ---Add data to IPFS
     try {
       const added = await client.add(data);
-      const url = `https://infura-ipfs.io/ipfs/${added.path}`;
+      const url = `${subdomain}/ipfs/${added.path}`;
+      //const url = `https://ipfs.io/ipfs/${added.path}`;
+      console.log("Meta Data URL", url);
       await createSale(url, price);
     } catch (error) {
       console.log(`Error to upload IPFS${error}`);
@@ -172,11 +175,11 @@ export const NFTMarketplaceProvider = ({ children }) => {
       const items = await Promise.all(
         data.map(async ({ tokenId, seller, owner, price: unformattedPrice }) => {
           const tokenURI = await contract.tokenURI(tokenId);
+          // console.log("tokenURI", tokenURI);
 
-          // Fetch IPFS data using axios API
           const {
             data: { image, name, description },
-          } = await axios.get(tokenURI);
+          } = await axios(tokenURI);
 
           const price = ethers.utils.formatUnits(unformattedPrice.toString(), "ether");
 
@@ -196,8 +199,8 @@ export const NFTMarketplaceProvider = ({ children }) => {
       return items;
     } catch (error) {
       console.log(`Fectching NFT error${error}`);
-      setError(`Fectching NFT error`);
-      setOpenError(true);
+      // setError(`Fectching NFT error`);
+      // setOpenError(true);
     }
   };
 
@@ -231,8 +234,8 @@ export const NFTMarketplaceProvider = ({ children }) => {
       return items;
     } catch (error) {
       console.log(`Error while fetchMyNFTorListedNFT ${error}`);
-      setError(`Error while fetchMyNFTorListedNFT `);
-      setOpenError(true);
+      // setError(`Error while fetchMyNFTorListedNFT `);
+      // setOpenError(true);
     }
   };
 
