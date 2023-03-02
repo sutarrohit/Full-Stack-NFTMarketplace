@@ -12,7 +12,6 @@
 * Integration with the Ethereum blockchain for NFT creation, buying, and selling. 
 * User-friendly interface for browsing and searching NFTs.
 * Secure payment system Ether coin.
-* Wallet integration to manage user funds and transactions.	
 
 ## Technologies
 
