@@ -57,7 +57,7 @@ const NFTDetailsImg = ({ nft }) => {
           {/* NFT Image */}
           <div className={Style.NFTDetailsImg_box_NFT_img}>
             <Image
-              src={nft.image || images.creatorbackground1}
+              src={nft.image || images.upload}
               className={Style.NFTDetailsImg_box_NFT_img_img}
               alt="NFT image"
               width={700}
