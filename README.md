@@ -1,4 +1,4 @@
-# NFT Marketplace </br>
+# Full Stack NFT Marketplace </br>
 
  	
 * This is a full stack NFT marketplace project, built using Solidity and Nextjs.
