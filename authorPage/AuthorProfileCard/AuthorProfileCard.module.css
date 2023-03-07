@@ -19,6 +19,7 @@
 
 .AuthorProfileCard_box_img_img {
   border-radius: 1rem;
+  width: 100%;
 }
 
 .AuthorProfileCard_box_info h2 {

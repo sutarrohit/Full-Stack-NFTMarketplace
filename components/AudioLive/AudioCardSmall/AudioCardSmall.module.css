@@ -23,6 +23,7 @@
 
 .audioPlayer_box_img {
   border-radius: 0.5rem;
+  width: 100%;
 }
 
 .audioPlayer_box_info_box_price {
