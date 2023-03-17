@@ -4,10 +4,12 @@
   border: 1px solid var(--icons-color);
   border-radius: 2.2rem;
   font-size: 1.1rem;
+  font-weight: 900;
   color: var(--shadow-light-color);
   cursor: pointer;
   transition: all 0.2s ease-in;
   box-shadow: var(--box-shadow);
+  min-width: 11rem;
 }
 
 .button:hover {

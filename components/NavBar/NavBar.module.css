@@ -138,6 +138,9 @@
   align-content: center;
   font-weight: 900;
   padding: 0 1.5rem;
+  width: 12rem;
+  background-color: var(--icons-color);
+  color: var(--shadow-light-color);
 }
 
 .navbar_container_right_address p {
@@ -147,8 +150,10 @@
 }
 
 .navbar_container_right_address:hover {
-  background-color: var(--icons-color);
-  color: var(--main-bg-color);
+  background-color: var(--maib-bg-color);
+  color: var(--icons-color);
+  border: 1px solid var(--icons-color);
+  transition: all 0.2s ease-in;
 }
 
 .navbar_container_right_button {

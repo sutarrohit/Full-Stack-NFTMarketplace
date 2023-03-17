@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useRouter } from "next/router";
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,7 +13,6 @@ import { CgMenuLeft, CgMenuRight } from "react-icons/cg";
 import Style from "./NavBar.module.css";
 import { Discover, HelpCenter, Notification, Profile, SideBar } from "./index";
 import { Button, Error } from "../ComponentIndex";
-
 import images from "../../img";
 
 // IMPORT FROM SMART CONTRACT
@@ -163,7 +161,7 @@ const NavBar = () => {
           {/* Left Section of NavBar */}
           <div className={Style.navbar_container_left}>
             <div className={Style.logo} onClick={() => backHome()}>
-              {ThemeColor ? (
+              {/* {ThemeColor ? (
                 <Image
                   src={images.project1}
                   alt="NFT MarketPlace"
@@ -178,7 +176,14 @@ const NavBar = () => {
                   height={150}
                   className={Style.navbar_container_left_logo}
                 />
-              )}
+              )} */}
+
+              <Image
+                src={images.project1}
+                alt="NFT MarketPlace"
+                height={150}
+                className={Style.navbar_container_left_logo}
+              />
             </div>
 
             <div className={Style.navbar_container_left_box_input}>
