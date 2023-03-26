@@ -51,17 +51,20 @@
   grid-template-columns: 0.9fr 0.9fr 0.5fr 0.5fr 1.2fr 0.6fr 0.3fr;
   gap: 1rem;
   align-items: center;
-  /* align-self: flex-end; */
 }
 
 .navbar_container_right_discover {
   position: relative;
   cursor: pointer;
+  font-weight: 900;
+  font-size: 1.2rem;
 }
 
 .navbar_container_right_help {
   position: relative;
   cursor: pointer;
+  font-weight: 900;
+  font-size: 1.2rem;
 }
 
 .navbar_container_right_discover_box,
@@ -173,6 +176,8 @@
 
   .navbar_container_right {
     grid-template-columns: repeat(3, 1fr);
+    font-weight: 900;
+    font-size: 1rem;
   }
 
   .navbar_container_right_menuBtn {
