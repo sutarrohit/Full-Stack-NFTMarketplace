@@ -126,6 +126,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  color: var(--icons-color);
 }
 
 .NFTCard_box_update_details_price_box_bid {

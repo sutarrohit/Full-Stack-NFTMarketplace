@@ -80,8 +80,10 @@ import ai4 from "./ai4.webp";
 
 import cyber1 from "./cyber1.webp";
 import nftart from "./nftart.png";
+import icons8 from "./icons8.png";
 
 export default {
+  icons8,
   nftart,
   cyber1,
   bored1,

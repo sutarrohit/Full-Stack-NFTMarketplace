@@ -48,11 +48,12 @@
   align-items: center;
   justify-content: space-between;
   line-height: 0;
-  background-color: var(--icons-bg-color);
+  background-color: var(--main-bg-color);
   border-radius: 0.5rem;
   padding-inline: 1rem;
   cursor: pointer;
   margin-top: 1rem;
+  color: var(--icons-color);
 }
 
 .NFTDetailsImg_box_details_box,

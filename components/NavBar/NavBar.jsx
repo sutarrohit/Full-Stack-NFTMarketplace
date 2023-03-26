@@ -161,27 +161,11 @@ const NavBar = () => {
           {/* Left Section of NavBar */}
           <div className={Style.navbar_container_left}>
             <div className={Style.logo} onClick={() => backHome()}>
-              {/* {ThemeColor ? (
-                <Image
-                  src={images.project1}
-                  alt="NFT MarketPlace"
-                  height={150}
-                  className={Style.navbar_container_left_logo}
-                />
-              ) : (
-                <Image
-                  src={images.project2}
-                  alt="NFT MarketPlace"
-                  width={150}
-                  height={150}
-                  className={Style.navbar_container_left_logo}
-                />
-              )} */}
-
               <Image
-                src={images.project1}
+                src={images.icons8}
                 alt="NFT MarketPlace"
-                height={150}
+                height={50}
+                // width={50}
                 className={Style.navbar_container_left_logo}
               />
             </div>
