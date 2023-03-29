@@ -43,11 +43,11 @@ Once you have these prerequisites installed, you can follow these steps:
 
 
 
-## Contributing......
+## Contributing
 
 If you would like to contribute to the project, please fork the repository and submit a pull request with your changes.
 
-## Acknowledgements
+## Acknowledgements:
 
 This project was inspired by OpenSea, a popular NFT marketplace.</br>
 Thanks to @daulathussain for the helpful tutorials on full stack NFT marketplace.
