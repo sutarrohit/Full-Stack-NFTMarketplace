@@ -33,7 +33,7 @@ const Home = () => {
   console.log(creators);
 
   useEffect(() => {
-    fetchNFTS().then((item) => {
+    fetchNFTS()?.then((item) => {
       setNFTs(item.reverse());
       setNftCopys(item);
     });
