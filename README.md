@@ -3,7 +3,7 @@
  	
 * This is a full stack NFT marketplace project, built using Solidity and Nextjs.
 
-* The project allows users to create, buy, and sell non-fungible tokens (NFTs) on the Ethereum and EVM compatiable blockchains. The platform is designed to be user-friendly and accessible to both novice and experienced users.
+* The project allows users to create, buy, and sell non-fungible tokens (NFTs) on the Ethereum and EVM compatible blockchains. The platform is designed to be user-friendly and accessible to both novice and experienced users.
 
 ## Features
 
